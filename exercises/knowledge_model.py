@@ -24,4 +24,7 @@ class User(Base):
 				"Activity: {}\n").format(
 				self.Name, self.BirthDay, self.Active)
 		
-	
+x = User(Name = "inon",
+	BirthDay = "2001", 
+	Active = "True")
+print(x)
