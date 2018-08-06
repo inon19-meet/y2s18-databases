@@ -35,9 +35,10 @@ def delete_User_by_name(Name):
 delete_User_by_name("inon")
 
 def delete_all_Users():
-	session.query(User).delete()
+	session.query(User).all(.delete()
 	session.commit()
+
 delete_all_Users()
 
-def edit_User_name():
-	pass
+#def edit_User_name():
+	#pass
