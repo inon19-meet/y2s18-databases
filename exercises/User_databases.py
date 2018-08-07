@@ -59,6 +59,13 @@ def delete_User_by_Activity():
 		Active=False).all()
 	return delete_non_Active
 
+def User_Rating():
+	rating = session.query(User).filter_by(
+		Rating = Rating).all()
+	return rating
+
+
+
 #print(query_User_by_Activity())
 print(delete_all_Users())
 #print(query_all_Users())

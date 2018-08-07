@@ -17,10 +17,12 @@ class User(Base):
 	# The third column will be a string representing the 
 	Active = Column(Boolean)
 	# topic of the article. The last column will be
+	Rating = column(Integer)
 	# an integer, representing your rating of the article.
 	def __repr__(self):
 		return ("User_Name: {}\n"
 				"User_BirthDay: {}\n"
-				"Activity: {}\n").format(
-				self.Name, self.BirthDay, self.Active)
+				"Activity: {}\n"
+				"Rating: {}\n").format(
+				self.Name, self.BirthDay, self.Active, self.Rating)
 		
